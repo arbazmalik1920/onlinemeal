@@ -1,0 +1,222 @@
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables */
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/*Navigation bar: Logo and image */
+#logo{
+    margin: 3px 21px;
+    
+}
+#logo img{
+    height: 53px;
+    margin: 3px 5px;
+}
+/* Navigation bar: list styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 21px;
+    border-radius: 19px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:11px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    
+}
+#home::before{
+    content: "";
+    /* double dot isliye lga kyuki abhi hm ek folder k andr h i.e.(style2.css) */
+   /* background: url('/Harry-onlinemeal/img/bg1.jpg') no-repeat center center/cover; */
+    position: absolute;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif; 
+}
+#home p {
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Services section */
+
+#services{
+    margin: 20px 3px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    border-radius: 28px;
+    padding: 30px;
+    margin: 2px 50px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 145px;
+    display: block;
+    margin: auto;  
+    
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* clients-section */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    /* background: url('/Harry-onlinemeal/img/bg2.jpg'); */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 3.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+}
+.client-item{
+    padding: 34px;
+
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    /* background: url('/Harry-onlinemeal/img/contact.jpg'); */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1.1;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+     width: 40%;   /* isne kevl box ki widht bdayi h */
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+  
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility class */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgba(44, 36, 36, 0.116);
+    color: white;
+    margin: 15px;
+    font-family:Georgia, 'Times New Roman';
+    border-radius: 12px;
+}
+.btn:hover{
+    background-color: blanchedalmond;
+    color: black;
+    
+}
+
+ .center{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+
